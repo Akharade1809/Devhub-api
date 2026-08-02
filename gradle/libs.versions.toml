@@ -24,6 +24,8 @@ logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 
 koin = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
 [plugins]
 
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

@@ -6,9 +6,3 @@ plugins {
 
 group = "io.devhub"
 version = "0.0.1"
-
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-}
