@@ -14,8 +14,11 @@ kotlin {
 }
 
 dependencies {
+    implementation(project(":libraries:contracts"))
+    implementation(project(":libraries:configuration"))
 
-    implementation(project(":libraries:core"))
+    implementation("io.ktor:ktor-server-config-yaml")
+
 
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)
