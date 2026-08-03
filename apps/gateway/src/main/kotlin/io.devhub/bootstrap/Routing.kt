@@ -1,5 +1,6 @@
 package io.devhub.bootstrap
 
+import io.devhub.configuration.loader.ConfigurationLoader
 import io.devhub.core.model.ApiInfo
 import io.devhub.core.model.HealthResponse
 import io.ktor.server.application.*
@@ -7,18 +8,17 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Application.configureRouting() {
-
+    val applicationConfig = ConfigurationLoader.load(this)
     routing {
-
         get("/") {
 
             call.respond(
 
                 ApiInfo(
 
-                    name = "DevHub API",
+                    name = applicationConfig.name,
 
-                    version = "0.0.1",
+                    version = applicationConfig.version,
 
                     status = "running"
 

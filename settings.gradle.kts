@@ -17,6 +17,6 @@ rootProject.name = "devhub-api"
 
 include(
     ":apps:gateway",
-    ":libraries:contracts"
+    ":libraries:contracts",
     ":libraries:configuration"
 )
