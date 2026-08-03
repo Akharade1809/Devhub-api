@@ -5,3 +5,9 @@ ktor:
 
   deployment:
     port: 8080
+
+devhub:
+  application:
+    name: Devhub API
+    version: 0.0.1
+    environment: local
