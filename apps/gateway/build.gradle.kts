@@ -26,5 +26,7 @@ dependencies {
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.serialization)
 
+    implementation(libs.koin.ktor)
+
     implementation(libs.logback)
 }
